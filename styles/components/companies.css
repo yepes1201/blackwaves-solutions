@@ -19,10 +19,11 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-50% + 96px));
+    transform: translateX(-25%);
   }
 }
 
 .animate-slide {
   animation: slide 20s linear infinite;
+  animation-timing-function: ease-in-out;
 }
