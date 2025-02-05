@@ -1,0 +1,28 @@
+.bg-fade-left {
+  background: linear-gradient(
+    90deg,
+    var(--fader-start) 20%,
+    var(--fader-end) 100%
+  );
+}
+
+.bg-fade-right {
+  background: linear-gradient(
+    270deg,
+    var(--fader-start) 20%,
+    var(--fader-end) 100%
+  );
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% + 96px));
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
