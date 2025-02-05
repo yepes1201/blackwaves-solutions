@@ -15,19 +15,19 @@ export default function Navbar() {
               href="/solutions"
               className="transition-colors hover:text-primary"
             >
-              Solutions
+              Testimonios
             </Link>
             <Link
               href="/industries"
               className="transition-colors hover:text-primary"
             >
-              Industries
+              Proyectos
             </Link>
             <Link
               href="/about"
               className="transition-colors hover:text-primary"
             >
-              About Us
+              Planes
             </Link>
           </nav>
           <Button size="sm">Consulta ahora</Button>

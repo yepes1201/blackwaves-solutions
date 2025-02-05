@@ -3,7 +3,7 @@ import Hero from "@/components/hero";
 import CTA from "@/components/cta";
 import Footer from "@/components/footer";
 import Flow from "@/components/flow";
-import Services from "@/components/services";
+import Plans from "@/components/plans";
 import Companies from "@/components/companies";
 import Showcase from "@/components/showcase";
 
@@ -23,7 +23,7 @@ export default function Home() {
         <Companies />
         <Showcase />
         <Flow />
-        <Services />
+        <Plans />
         <CTA />
         <Footer />
       </div>
