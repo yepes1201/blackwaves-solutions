@@ -1,29 +1,29 @@
-import { Brain, Cloud, Shield, Zap } from "lucide-react";
+import { Lightbulb, Compass, Code, Rocket } from "lucide-react";
 
-const flow = [
+const flowSteps = [
   {
-    name: "AI-Powered Analytics",
+    name: "Analysis & Planning",
     description:
-      "Harness the power of machine learning to derive actionable insights from your data.",
-    icon: Brain,
+      "We start by understanding your needs and defining clear project objectives and scope.",
+    icon: Lightbulb,
   },
   {
-    name: "Cloud-Native Architecture",
+    name: "Design & Architecture",
     description:
-      "Scalable, resilient, and efficient solutions built for the modern cloud ecosystem.",
-    icon: Cloud,
+      "Our experts create detailed designs and robust system architectures tailored to your requirements.",
+    icon: Compass,
   },
   {
-    name: "Enterprise-Grade Security",
+    name: "Development & Testing",
     description:
-      "State-of-the-art security measures to protect your most valuable assets.",
-    icon: Shield,
+      "We employ agile methodologies to develop and rigorously test your software, ensuring top quality.",
+    icon: Code,
   },
   {
-    name: "High-Performance Systems",
+    name: "Deployment & Support",
     description:
-      "Optimized for speed and efficiency, our solutions deliver unparalleled performance.",
-    icon: Zap,
+      "We handle smooth deployments and provide ongoing support to keep your software running optimally.",
+    icon: Rocket,
   },
 ];
 
@@ -32,24 +32,35 @@ export default function Flow() {
     <section className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-          Cómo trabajamos
+          Our Development Process
         </h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-          Descubre como Amane Soft transforma tu negocio con nuestras
-          tecnologías innovadoras.
+          At Amane Soft, we follow a comprehensive approach to deliver
+          high-quality software solutions.
         </p>
       </div>
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
-        {flow.map((flow) => (
-          <div
-            key={flow.name}
-            className="relative overflow-hidden rounded-lg border bg-background p-8"
-          >
-            <div className="flex items-center gap-4">
-              <flow.icon className="h-8 w-8" />
-              <h3 className="font-bold">{flow.name}</h3>
+      <div className="mx-auto max-w-3xl">
+        {flowSteps.map((step, index) => (
+          <div key={step.name} className="relative pl-16 pb-12">
+            {/* Timeline line */}
+            {index !== flowSteps.length - 1 && (
+              <div
+                className="absolute left-[1.9375rem] top-12 h-full w-[1px] bg-border"
+                aria-hidden="true"
+              />
+            )}
+            {/* Icon */}
+            <div className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
+              <step.icon className="h-5 w-5" />
             </div>
-            <p className="mt-2 text-muted-foreground">{flow.description}</p>
+            {/* Content */}
+            <div className="rounded-lg border bg-background p-6 shadow-sm">
+              <h3 className="font-bold text-xl mb-2 flex items-center">
+                <span className="text-primary mr-2">{index + 1}.</span>
+                {step.name}
+              </h3>
+              <p className="text-muted-foreground">{step.description}</p>
+            </div>
           </div>
         ))}
       </div>

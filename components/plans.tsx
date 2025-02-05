@@ -1,29 +1,32 @@
-import { Brain, Cloud, Shield, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Rocket, Wrench } from "lucide-react";
 
 const plans = [
   {
-    name: "Desarrollo a la medida",
+    name: "MVP Development",
     description:
-      "Nuestro enfoque se basa en la creación de soluciones personalizadas que se ajusten a las necesidades de cada cliente.",
-    icon: Brain,
+      "Launch your product quickly and efficiently. We'll help you build a Minimum Viable Product to validate your idea and attract early adopters.",
+    icon: Rocket,
+    features: [
+      "Rapid prototyping",
+      "Core feature development",
+      "User experience design",
+      "Scalable architecture",
+      "Basic analytics integration",
+    ],
   },
   {
-    name: "Desarrollo de eCommerce",
+    name: "Ongoing Support & Development",
     description:
-      "Desarrollo de tiendas en línea con carrito de compras, gestión de pagos, y gestión de inventario.",
-    icon: Cloud,
-  },
-  {
-    name: "Aplicaciones móviles",
-    description:
-      "Desarrollo de aplicaciones para dispositivos móviles con una experiencia de usuario excepcional.",
-    icon: Shield,
-  },
-  {
-    name: "High-Performance Systems",
-    description:
-      "Optimized for speed and efficiency, our solutions deliver unparalleled performance.",
-    icon: Zap,
+      "Keep your software up-to-date and continuously improving. Our team provides ongoing support and development to ensure your product evolves with your business needs.",
+    icon: Wrench,
+    features: [
+      "Bug fixes and maintenance",
+      "Feature enhancements",
+      "Performance optimization",
+      "Security updates",
+      "Technical support",
+    ],
   },
 ];
 
@@ -32,24 +35,50 @@ export default function Plans() {
     <section id="planes" className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-          Planes
+          Our Services
         </h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-          Descubre como Amane Soft transforma tu negocio con nuestras
-          tecnologías innovadoras.
+          Choose the service that best fits your current needs and let's build
+          something great together.
         </p>
       </div>
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
         {plans.map((plan) => (
           <div
             key={plan.name}
-            className="relative overflow-hidden rounded-lg border bg-background p-8"
+            className="flex flex-col rounded-lg border bg-background p-8 shadow-sm"
           >
-            <div className="flex items-center gap-4">
-              <plan.icon className="h-8 w-8" />
-              <h3 className="font-bold">{plan.name}</h3>
+            <div className="mb-6 flex items-center gap-4">
+              <div className="rounded-full bg-primary/10 p-3">
+                <plan.icon className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-2xl">{plan.name}</h3>
             </div>
-            <p className="mt-2 text-muted-foreground">{plan.description}</p>
+            <p className="mb-6 flex-grow text-muted-foreground">
+              {plan.description}
+            </p>
+            <ul className="mb-8 space-y-2">
+              {plan.features.map((feature) => (
+                <li key={feature} className="flex items-center">
+                  <svg
+                    className="mr-2 h-4 w-4 text-primary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <Button className="w-full">Contact Us</Button>
           </div>
         ))}
       </div>

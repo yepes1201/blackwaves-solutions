@@ -1,3 +1,4 @@
+// Components & Layouts
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import CTA from "@/components/cta";
