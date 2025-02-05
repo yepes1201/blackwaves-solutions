@@ -29,7 +29,7 @@ const plans = [
 
 export default function Plans() {
   return (
-    <section className="container space-y-16 py-24 md:py-32">
+    <section id="planes" className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
           Planes

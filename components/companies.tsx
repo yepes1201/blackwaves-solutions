@@ -46,7 +46,10 @@ export default function Companies() {
   }, []);
 
   return (
-    <section className="container flex flex-col items-center text-center pb-16">
+    <section
+      id="testimonios"
+      className="container flex flex-col items-center text-center pt-32 pb-16"
+    >
       <h2 className="text-3xl font-bold md:text-5xl">
         Empresas que confían en nosotros
       </h2>
