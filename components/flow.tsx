@@ -2,27 +2,34 @@ import { Lightbulb, Compass, Code, Rocket } from "lucide-react";
 
 const flowSteps = [
   {
-    name: "Analysis & Planning",
+    name: "Fase Preliminar: Conectamos con tu Visión 🪐",
     description:
-      "We start by understanding your needs and defining clear project objectives and scope.",
+      "Iniciamos con una reunion de 30 minutos donde nos sumergimos en tu idea, exploramos tu vision y definimos juntos lo que deseas lograr. 🤝<br/><br/>" +
+      "Posterior a la reunion, evaluamos la viabilidad tecnica y estrategica de tu concepto para decidir si está listo para convertise en MVP",
     icon: Lightbulb,
   },
   {
-    name: "Design & Architecture",
+    name: "Construyendo la Estrategia  ✍️📖",
     description:
-      "Our experts create detailed designs and robust system architectures tailored to your requirements.",
+      "Definimos objetivos claros y diseñamos un plan detallado que guíe el desarrollo de tu MVP hacia el éxito. 📝",
+    icon: Lightbulb,
+  },
+  {
+    name: "Diseñando el Futuro 💻🤓",
+    description:
+      "Creamos diseños únicos y arquitecturas sólidas que se ajustan a tus necesidades, asegurando que tu MVP sea tanto funcional como atractivo. 👨‍💻",
     icon: Compass,
   },
   {
-    name: "Development & Testing",
+    name: "Dando Vida a Tu Idea 👷‍♂️",
     description:
-      "We employ agile methodologies to develop and rigorously test your software, ensuring top quality.",
+      "Ponemos manos a la obra con metodologías ágiles, desarrollando tu MVP y sometiéndolo a pruebas exhaustivas para garantizar una calidad impecable. 🪛⚙️",
     icon: Code,
   },
   {
-    name: "Deployment & Support",
+    name: "Lanzamiento y Más Allá  🚀👨‍🚀",
     description:
-      "We handle smooth deployments and provide ongoing support to keep your software running optimally.",
+      "Implementamos tu producto sin contratiempos.",
     icon: Rocket,
   },
 ];
@@ -32,11 +39,10 @@ export default function Flow() {
     <section className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-          Our Development Process
+          ¿Cómo es nuestro Proceso de Trabajo?
         </h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-          At Amane Soft, we follow a comprehensive approach to deliver
-          high-quality software solutions.
+          En Blackwaves Solutions seguimos un enfoque personalizado para transformar tus ideas en MVPs de alta calidad.
         </p>
       </div>
       <div className="mx-auto max-w-3xl">
@@ -45,7 +51,7 @@ export default function Flow() {
             {/* Timeline line */}
             {index !== flowSteps.length - 1 && (
               <div
-                className="absolute left-[1.9375rem] top-12 h-full w-[1px] bg-border"
+                className="absolute left-[1.25rem] top-14 h-[60%] w-[1px] bg-border"
                 aria-hidden="true"
               />
             )}
@@ -59,7 +65,10 @@ export default function Flow() {
                 <span className="text-primary mr-2">{index + 1}.</span>
                 {step.name}
               </h3>
-              <p className="text-muted-foreground">{step.description}</p>
+              <p
+                className="text-muted-foreground"
+                dangerouslySetInnerHTML={{ __html: step.description }}
+              />
             </div>
           </div>
         ))}

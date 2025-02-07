@@ -6,6 +6,7 @@ import Image from "next/image";
 
 // Assets
 import microsoft from "@/public/img/microsoft.png";
+import black from "@/public/img/black-logo.png";
 
 // Styles
 import "@/styles/components/companies.css";
@@ -50,25 +51,24 @@ export default function Companies() {
       id="testimonios"
       className="container flex flex-col items-center text-center pt-32 pb-16"
     >
-      <h2 className="text-3xl font-bold md:text-5xl">
-        Empresas que confían en nosotros
+      <h2 className="text-3xl font-bold md:text-5xl mb-4">
+      Aliados que Confían en Nuestro Talento
       </h2>
+      <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+      Grandes ideas requieren socios estratégicos. Estas son algunas de las empresas que han confiado en nosotros para llevar sus MVPs al siguiente nivel.        </p>
       <div
         ref={containerRef}
         className="flex gap-8 overflow-hidden w-full relative h-[120px]"
       >
-        <div className="absolute left-0 w-24 h-full z-20"></div>
-        <div className="absolute right-0 w-24 h-full z-20"></div>
+        {/* <div className="absolute left-0 w-24 h-full z-20"></div>
+        <div className="absolute right-0 w-24 h-full z-20"></div> */}
 
-        <div className="absolute flex animate-slide">
-          {[...duplicatedCompanies].map((company) => (
-            <Image
-              key={`${company.id}-dup`}
-              src={company.logo}
-              alt={company.name}
-              className="mx-8 h-[70px]"
-            />
-          ))}
+        <div className="mx-auto flex">
+          <Image
+            src={black}
+            alt={"Black"}
+            className="w-auto h-full"
+          />
         </div>
       </div>
     </section>
