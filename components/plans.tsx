@@ -1,5 +1,9 @@
+// Components
 import { Button } from "@/components/ui/button";
-import { Rocket, Wrench } from "lucide-react";
+import { Island } from "./ui/island";
+
+// Icons
+import { Gem, Rocket, Wrench } from "lucide-react";
 
 const plans = [
   {
@@ -34,11 +38,16 @@ export default function Plans() {
   return (
     <section id="planes" className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
+        <Island className="mx-auto w-fit text-center mb-2 flex gap-2 items-center">
+          <Gem className="w-6 h-6" />
+          Planes
+        </Island>
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-         Nuestros Servicios
+          Nuestros Servicios
         </h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-          Elige el servicio que se adapte a tus necesidades actuales y trabajemos juntos para hacer realidad tu idea.
+          Elige el servicio que se adapte a tus necesidades actuales y
+          trabajemos juntos para hacer realidad tu idea.
         </p>
       </div>
       <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">

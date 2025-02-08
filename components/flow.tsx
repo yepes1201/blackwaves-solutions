@@ -1,4 +1,5 @@
-import { Lightbulb, Compass, Code, Rocket } from "lucide-react";
+import { Lightbulb, Compass, Code, Rocket, Workflow } from "lucide-react";
+import { Island } from "./ui/island";
 
 const flowSteps = [
   {
@@ -28,8 +29,7 @@ const flowSteps = [
   },
   {
     name: "Lanzamiento y Más Allá  🚀👨‍🚀",
-    description:
-      "Implementamos tu producto sin contratiempos.",
+    description: "Implementamos tu producto sin contratiempos.",
     icon: Rocket,
   },
 ];
@@ -37,12 +37,17 @@ const flowSteps = [
 export default function Flow() {
   return (
     <section className="container space-y-16 py-24 md:py-32">
-      <div className="mx-auto max-w-[58rem] text-center">
+      <div className="mx-auto max-w-[58rem] text-center flex flex-col gap-0">
+        <Island className="mx-auto w-fit text-center mb-2 flex gap-2 items-center">
+          <Workflow className="w-6 h-6" />
+          Workflow
+        </Island>
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
           ¿Cómo es nuestro Proceso de Trabajo?
         </h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-          En Blackwaves Solutions seguimos un enfoque personalizado para transformar tus ideas en MVPs de alta calidad.
+          En Blackwaves Solutions seguimos un enfoque personalizado para
+          transformar tus ideas en MVPs de alta calidad.
         </p>
       </div>
       <div className="mx-auto max-w-3xl">

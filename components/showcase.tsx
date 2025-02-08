@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Images } from "lucide-react";
+import { Island } from "./ui/island";
 
 const showcase = [
   {
@@ -22,13 +23,18 @@ export default function Showcase() {
   return (
     <section id="proyectos" className="container py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center mb-16">
+        <Island className="mx-auto w-fit text-center mb-2 flex gap-2 items-center">
+          <Images className="w-6 h-6" />
+          Proyectos
+        </Island>
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
           Nuestros Proyectos
         </h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-        Explora algunos de los MVPs que hemos desarrollado.
-        <br />
-        Hemos ayudado a emprendedores y empresas a transformar ideas en productos reales.
+          Explora algunos de los MVPs que hemos desarrollado.
+          <br />
+          Hemos ayudado a emprendedores y empresas a transformar ideas en
+          productos reales.
         </p>
       </div>
       {/* grid-cols-1 md:grid-cols-2 lg:grid-cols-3 */}
