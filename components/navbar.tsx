@@ -12,10 +12,10 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           <nav className="flex flex-1 items-center space-x-6 text-sm font-medium">
             <Link
-              href="#testimonios"
+              href="#aliados"
               className="transition-colors hover:text-primary"
             >
-              Testimonios
+              Aliados
             </Link>
             <Link
               href="#proyectos"

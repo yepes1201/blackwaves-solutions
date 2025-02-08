@@ -26,10 +26,11 @@
     --radius: 0.5rem;
     --fader-start: #ffffff; /* Default light mode color */
     --fader-end: rgba(255, 255, 255, 0);
+    --island: 240 5.9% 90%;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 228 13% 8%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -50,6 +51,7 @@
     --ring: 240 4.9% 83.9%;
     --fader-start: #1a1a1a; /* Dark mode color */
     --fader-end: rgba(26, 26, 26, 0);
+    --island: 240 3.7% 15.9%;
   }
 }
 

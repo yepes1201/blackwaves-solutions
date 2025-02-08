@@ -54,7 +54,7 @@ export default function Companies() {
 
   return (
     <section
-      id="testimonios"
+      id="aliados"
       className="container flex flex-col items-center text-center pt-32 pb-16"
     >
       <Island className="mx-auto w-fit text-center mb-2 flex gap-2 items-center">
