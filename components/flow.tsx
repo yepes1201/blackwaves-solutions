@@ -1,4 +1,11 @@
-import { Lightbulb, Compass, Code, Rocket, Workflow } from "lucide-react";
+import {
+  Lightbulb,
+  Compass,
+  Code,
+  Rocket,
+  Workflow,
+  Pencil,
+} from "lucide-react";
 import { Island } from "./ui/island";
 
 const flowSteps = [
@@ -13,7 +20,7 @@ const flowSteps = [
     name: "Construyendo la Estrategia  ✍️📖",
     description:
       "Definimos objetivos claros y diseñamos un plan detallado que guíe el desarrollo de tu MVP hacia el éxito. 📝",
-    icon: Lightbulb,
+    icon: Pencil,
   },
   {
     name: "Diseñando el Futuro 💻🤓",
@@ -52,16 +59,16 @@ export default function Flow() {
       </div>
       <div className="mx-auto max-w-3xl">
         {flowSteps.map((step, index) => (
-          <div key={step.name} className="relative pl-16 pb-12">
+          <div key={step.name} className="relative sm:pl-16 pb-12">
             {/* Timeline line */}
             {index !== flowSteps.length - 1 && (
               <div
-                className="absolute left-[1.25rem] top-14 h-[60%] w-[1px] bg-primary/15"
+                className="hidden sm:block absolute left-[1.25rem] top-14 h-[60%] w-[1px] bg-primary/15"
                 aria-hidden="true"
               />
             )}
             {/* Icon */}
-            <div className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
+            <div className="hidden sm:flex absolute left-0 h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
               <step.icon className="h-5 w-5" />
             </div>
             {/* Content */}

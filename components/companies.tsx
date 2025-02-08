@@ -71,13 +71,10 @@ export default function Companies() {
       </p>
       <div
         ref={containerRef}
-        className="flex gap-8 overflow-hidden w-full relative h-[120px]"
+        className="flex gap-8 overflow-hidden w-full relative h-[120px] items-center justify-center"
       >
-        {/* <div className="absolute left-0 w-24 h-full z-20"></div>
-        <div className="absolute right-0 w-24 h-full z-20"></div> */}
-
-        <div className="mx-auto flex">
-          <Image src={black} alt={"Black"} className="w-auto h-full" />
+        <div className="flex gap-4 h-full">
+          <Image src={black} alt={"Black"} className="w-fit h-full" />
         </div>
       </div>
     </section>
