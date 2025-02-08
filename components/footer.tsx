@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
       <div className="container border-t py-6">
         <p className="text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Blackwave Solutions, Inc. All rights
+          © {new Date().getFullYear()} Blackwaves Solutions, Inc. All rights
           reserved.
         </p>
       </div>
