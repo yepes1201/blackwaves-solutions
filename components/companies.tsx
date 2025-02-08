@@ -58,7 +58,7 @@ export default function Companies() {
       className="container flex flex-col items-center text-center pt-32 pb-16"
     >
       <Island className="mx-auto w-fit text-center mb-2 flex gap-2 items-center">
-        <Handshake className="w-6 h-6" />
+        <Handshake className="w-5 h-5 md:w-6 md:h-6" />
         Aliados
       </Island>
       <h2 className="text-3xl font-bold md:text-5xl mb-4">

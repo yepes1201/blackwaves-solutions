@@ -24,7 +24,7 @@ export default function Showcase() {
     <section id="proyectos" className="container py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center mb-16">
         <Island className="mx-auto w-fit text-center mb-2 flex gap-2 items-center">
-          <Images className="w-6 h-6" />
+          <Images className="w-5 h-5 md:w-6 md:h-6" />
           Proyectos
         </Island>
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">

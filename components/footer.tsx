@@ -3,7 +3,7 @@ import { Github, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t">
+    <footer className="border-t border-primary/10">
       <div className="container flex flex-col justify-between gap-8 py-8 md:flex-row md:py-12">
         <div className="flex-1 space-y-4">
           <h2 className="font-bold">Blackwaves Solutions</h2>
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container border-t py-6">
+      <div className="container border-t py-6 border-primary/10">
         <p className="text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} Blackwaves Solutions, Inc. All rights
           reserved.
