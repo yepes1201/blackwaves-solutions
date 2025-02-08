@@ -56,7 +56,7 @@ export default function Flow() {
             {/* Timeline line */}
             {index !== flowSteps.length - 1 && (
               <div
-                className="absolute left-[1.25rem] top-14 h-[60%] w-[1px] bg-border"
+                className="absolute left-[1.25rem] top-14 h-[60%] w-[1px] bg-primary/15"
                 aria-hidden="true"
               />
             )}
