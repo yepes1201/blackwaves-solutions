@@ -86,7 +86,7 @@ export default function Plans() {
                 </li>
               ))}
             </ul>
-            <Button className="w-full">Contactanos</Button>
+            <Button className="w-full">Contáctanos</Button>
           </div>
         ))}
       </div>
