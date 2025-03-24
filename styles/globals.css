@@ -27,6 +27,7 @@
     --fader-start: #ffffff; /* Default light mode color */
     --fader-end: rgba(255, 255, 255, 0);
     --island: 240 5.9% 90%;
+    --brand: #df0c00;
   }
 
   .dark {
@@ -52,6 +53,7 @@
     --fader-start: #1a1a1a; /* Dark mode color */
     --fader-end: rgba(26, 26, 26, 0);
     --island: 240 3.7% 15.9%;
+    --brand: #df0c00;
   }
 }
 
@@ -64,5 +66,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .btn-brand {
+    @apply bg-brand text-white;
   }
 }

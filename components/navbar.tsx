@@ -1,6 +1,7 @@
 "use client";
 
 // Dependencies
+import { useLayoutEffect, useState } from "react";
 import Link from "next/link";
 
 // Components
@@ -18,7 +19,11 @@ import {
 
 // Icons
 import { Menu } from "lucide-react";
-import { useLayoutEffect, useState } from "react";
+
+// Assets
+import blackwaves from "@/public/img/blackwaves-logotipo.png";
+import blackwavesIcon from "@/public/img/blackwaves-logo.png";
+import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -45,7 +50,16 @@ export default function Navbar() {
     <header className="sticky top-0 sm:top-4 z-50 sm:rounded-full border-b sm:border w-full max-w-screen-sm mx-auto border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 sm:h-14 max-w-screen-2xl gap-0 items-center justify-between">
         <Link href="#hero" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold">Blackwaves</span>
+          <Image
+            className="hidden sm:block max-w-[160px]"
+            src={blackwaves}
+            alt="Blackwaves Logo"
+          />
+          <Image
+            className="sm:hidden max-w-[40px]"
+            src={blackwavesIcon}
+            alt="Blackwaves Logo"
+          />
         </Link>
         <div className="flex items-center space-x-4">
           <nav className="hidden sm:flex flex-1 items-center space-x-6 text-sm font-medium">
@@ -69,7 +83,9 @@ export default function Navbar() {
             </Link>
           </nav>
           <a href="#">
-            <Button size="sm">Consulta gratis</Button>
+            <Button className="bg-brand text-white hover:bg-brand/25" size="sm">
+              Consulta gratis
+            </Button>
           </a>
           <Button
             onClick={toggleDrawer}
