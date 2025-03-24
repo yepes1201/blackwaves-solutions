@@ -17,6 +17,13 @@ export const metadata: Metadata = {
   title: "Blackwaves Solutions - Tu Negocio Digital en Semanas",
   description:
     "Blackwaves ofrece soluciones de software innovadoras y de alta performance para empresas del futuro.",
+  keywords: [
+    "Blackwaves",
+    "Blackwaves Solutions",
+    "Negocio Digital",
+    "Negocio Digital en Semanas",
+    "Negocio Digital en Semanas",
+  ],
 };
 
 export default function RootLayout({
@@ -26,6 +33,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className="dark">
+      <head>
+        <link rel="icon" href="/img/blackwaves-logo.png" />
+      </head>
       <body
         className={`${inter.className} bg-background text-foreground antialiased`}
       >
