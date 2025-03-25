@@ -14,6 +14,13 @@ const showcase = [
     image: "/placeholder.svg?height=300&width=400",
     liveLink: "https://blackproject.com.co",
   },
+  {
+    title: "Isaromas",
+    description:
+      "Una tienda digital diseñada y optimizada para la marca Isaromas.",
+    image: "/placeholder.svg?height=300&width=400",
+    liveLink: "https://isaromas.com",
+  },
 ];
 
 export default function Showcase() {
@@ -38,7 +45,7 @@ export default function Showcase() {
         </p>
       </div>
       {/* grid-cols-1 md:grid-cols-2 lg:grid-cols-3 */}
-      <div className="grid place-content-center gap-8">
+      <div className="grid place-content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {displayedProjects.map((project) => (
           <ShowcaseCard key={project.title} project={project} />
         ))}

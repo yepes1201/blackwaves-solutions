@@ -13,6 +13,7 @@ import { Handshake } from "lucide-react";
 // Assets
 import microsoft from "@/public/img/microsoft.png";
 import black from "@/public/img/black-logo.png";
+import isaromas from "@/public/img/isaromas-logo.svg";
 
 // Styles
 import "@/styles/components/companies.css";
@@ -73,9 +74,8 @@ export default function Companies() {
         ref={containerRef}
         className="flex gap-8 overflow-hidden w-full relative h-[120px] items-center justify-center"
       >
-        <div className="flex gap-4 h-full">
-          <Image src={black} alt={"Black"} className="w-fit h-full" />
-        </div>
+        <Image src={black} alt={"Black"} className="w-fit h-full" />
+        <Image src={isaromas} alt={"Isaromas"} className="max-w-[180px] w-fit max-h-[80px]" />
       </div>
     </section>
   );

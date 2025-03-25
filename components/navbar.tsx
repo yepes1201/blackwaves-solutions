@@ -3,14 +3,13 @@
 // Dependencies
 import { useLayoutEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 // Components
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
@@ -23,7 +22,6 @@ import { Menu } from "lucide-react";
 // Assets
 import blackwaves from "@/public/img/blackwaves-logotipo.png";
 import blackwavesIcon from "@/public/img/blackwaves-logo.png";
-import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
