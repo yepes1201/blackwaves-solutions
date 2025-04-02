@@ -10,14 +10,14 @@ const showcase = [
   {
     title: "Black Project",
     description:
-      "Una tienda digital diseñada y optimizada para la marca Black.",
+      "Desarrollamos un MVP de tienda digital completamente funcional y optimizado para la marca Black. Creamos una experiencia de compra intuitiva y atractiva, permitiéndoles validar su modelo de negocio en línea rápidamente.",
     image: "/placeholder.svg?height=300&width=400",
     liveLink: "https://blackproject.com.co",
   },
   {
     title: "Isaromas",
     description:
-      "Una tienda digital diseñada y optimizada para la marca Isaromas.",
+      "Para Isaromas, creamos un MVP de plataforma digital para la venta de sus productos. Nos enfocamos en un diseño atractivo y una navegación sencilla para garantizar una excelente experiencia de usuario desde el inicio.",
     image: "/placeholder.svg?height=300&width=400",
     liveLink: "https://isaromas.com",
   },
